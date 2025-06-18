@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Portfolio Card Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(p1.jpg);
+            margin: 0;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Portfolio</h1>
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Project 1">
+            <div class="card-content">
+                <h2 class="card-title">Project One</h2>
+                <p class="card-desc">
+                    A modern landing page built with HTML, CSS, and basic JavaScript.
+                    This project focuses on clean UI, responsive design, and smooth scrolling.
+                    It includes a hero section, features list, and a call-to-action.
+                    Great for showcasing web presence for startups or portfolios.
+                </p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Project 2">
+            <div class="card-content">
+                <h2 class="card-title">Project Two</h2>
+                <p class="card-desc">
+                    An e-commerce product page mockup with responsive cards and a dynamic layout.
+                    It features product images, pricing, ratings, and an "Add to Cart" button.
+                    The layout adapts to all screen sizes using CSS Grid and Flexbox.
+                    Perfect practice for UI/UX design and layout structuring.
+                </p>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="https://via.placeholder.com/300x150" alt="Project 3">
+            <div class="card-content">
+                <h2 class="card-title">Project Three</h2>
+                <p class="card-desc">
+                    A blog-style layout designed using HTML5 and CSS3.
+                    Includes a featured post section, article cards, and a mobile-friendly sidebar.
+                    Emphasis on readable typography and structured content flow.
+                    Ideal for personal blogs or knowledge-sharing platforms.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
